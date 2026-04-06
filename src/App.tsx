@@ -9,12 +9,14 @@ import EndingPage from "./components/EndingPage";
 function App() {
 	return (
 		<>
-			<NavBar />
-			<Hero />
-			<Features />
-			<Operation />
-			<PeopleReview />
-			<EndingPage />
+			<div className="h-screen">
+				<NavBar />
+				<Hero />
+				<Features />
+				<Operation />
+				{/* <PeopleReview /> */}
+				{/* <EndingPage /> */}
+			</div>
 		</>
 	);
 }
