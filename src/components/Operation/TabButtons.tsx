@@ -9,7 +9,7 @@ const TabButtons: React.FC<{
 }> = ({ children, color, onSelect, clickedIndex, buttonId }) => {
   return (
     <li
-      className={`${clickedIndex === buttonId ? "font-bold text-2xl" + " " + color : color} font-averia`}
+      className={`${clickedIndex === buttonId ? "font-bold text-2xl relative -top-4" + " " + color : color} font-averia`}
       onClick={onSelect}
     >
       <button className={`${clickedIndex === buttonId ? "underline " : ""}`}>

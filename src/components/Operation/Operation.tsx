@@ -14,16 +14,16 @@ const Operation: React.FC = () => {
   let backgroundColorBasedOnIndex;
 
   if (selectedButton === 0) {
-    backgroundColorBasedOnIndex = "bg-yellow-300";
+    backgroundColorBasedOnIndex = "bg-yellow-200";
   } else if (selectedButton === 1) {
-    backgroundColorBasedOnIndex = "bg-green-300";
+    backgroundColorBasedOnIndex = "bg-green-200";
   } else {
-    backgroundColorBasedOnIndex = "bg-red-300";
+    backgroundColorBasedOnIndex = "bg-red-200";
   }
 
   let content = (
-    <div className="flex justify-center  w-screen border-t border-b mt-8">
-      <div className="flex w-3/6 flex-center items-center ">
+    <div className="flex justify-center  w-5/7 border-t border-b mt-8">
+      <div className="flex  flex-center items-center ">
         <div className="flex w-full  rounded-2xl h-auto ">
           <div className="p-4">
             <p className="font-averia">Please Select one of the tabs.</p>
@@ -35,16 +35,18 @@ const Operation: React.FC = () => {
 
   if (selectedButton !== null)
     content = (
-      <div className="flex flex-col items-center border-t border-b mt-8">
-        <div className="flex w-3/5 rounded-2xl h-auto  ">
+      <div className="flex w-5/7  flex-col items-center border-t border-b mt-8">
+        <div className="flex  rounded-2xl h-auto  ">
           <div className="grid grid-cols-[30%_70%] p-4 justify-start">
             {example[selectedButton] && (
-              <div className="grid  items-center justify-center">
-                <svg
-                  className={`w-40 h-auto ${backgroundColorBasedOnIndex} rounded-full`}
+              <div className="grid items-center justify-center">
+                <div
+                  className={`grid items-center justify-center w-40 h-auto ${backgroundColorBasedOnIndex} rounded-full`}
                 >
-                  <use xlinkHref={example[selectedButton].img}></use>
-                </svg>
+                  <svg className="w-20">
+                    <use xlinkHref={example[selectedButton].img}></use>
+                  </svg>
+                </div>
               </div>
             )}
             <div>
@@ -63,7 +65,7 @@ const Operation: React.FC = () => {
 
   return (
     <>
-      <div className="py-30 px-10 border-b-gray-300">
+      <div className="py-30 px-10 border-b-gray-100 bg-gray-200 ">
         <Section
           title="OPERATION"
           text="Everything as simple as possible, but no simpler."

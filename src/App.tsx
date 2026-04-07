@@ -9,7 +9,7 @@ import Operation from "./components/Operation";
 function App() {
   return (
     <>
-      <div className="h-screen">
+      <div className="h-screen bg-gray-200">
         <NavBar />
         <Hero />
         <Features />

@@ -3,7 +3,7 @@ import SingleFeature from "./SingleFeature";
 
 const Features: React.FC = () => {
   return (
-    <div className="py-30 px-10 border-b border-gray-300">
+    <div className="py-30 px-10 border-b border-gray-400 bg-gray-200 ">
       <div className="grid grid-cols-4 w-full mb-10">
         <div className="grid justify-start col-start-2 col-span-2 font-averia">
           <h1 className="text-green-600 text-xl ">FEATURES</h1>
