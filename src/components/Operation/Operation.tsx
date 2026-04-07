@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import OperationTabs from "./OperationTabs";
+
 interface buttonData {
   title: string;
   text: string;

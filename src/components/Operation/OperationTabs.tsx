@@ -1,10 +1,5 @@
 import React from "react";
 
-interface buttonData {
-  title: string;
-  text: string;
-  img: string;
-}
 const OperationTabs: React.FC<{
   handler: (buttonDescription: buttonData) => void;
 }> = ({ handler }) => {
@@ -13,9 +8,7 @@ const OperationTabs: React.FC<{
       <div className="flex justify-center ">
         <div className="flex gap-20 *:border *:rounded-full *:p-3 **:cursor-pointer">
           <button
-            className={(isActive: boolean) =>
-              isActive ? "bg-amber-800" : "bg-yellow-300"
-            }
+            className="bg-yellow-300"
             onClick={() =>
               handler({
                 title: "Tranfser money to anyone, instantly! No fees, no BS.",
