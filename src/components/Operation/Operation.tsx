@@ -5,7 +5,7 @@ import TabButtons from "./TabButtons";
 import { example } from "../../data/example";
 
 const Operation: React.FC = () => {
-  const [selectedButton, setSelectedButton] = useState<number | null>(null);
+  const [selectedButton, setSelectedButton] = useState<number>(0);
 
   function handleOperationTabsAndContent(buttonIndex: number) {
     setSelectedButton(buttonIndex);
@@ -21,22 +21,12 @@ const Operation: React.FC = () => {
     backgroundColorBasedOnIndex = "bg-red-200";
   }
 
-  let content = (
-    <div className="flex justify-center  w-5/7 border-t border-b mt-8">
-      <div className="flex  flex-center items-center ">
-        <div className="flex w-full  rounded-2xl h-auto ">
-          <div className="p-4">
-            <p className="font-averia">Please Select one of the tabs.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+  let content;
 
   if (selectedButton !== null)
     content = (
-      <div className="flex w-5/7  flex-col items-center border-t border-b mt-8">
-        <div className="flex  rounded-2xl h-auto  ">
+      <div className="flex w-5/7 flex-col items-center border-transparent bg-white mt-8 relative -top-15 rounded-2xl">
+        <div className="flex  rounded-2xl h-auto mt-12">
           <div className="grid grid-cols-[30%_70%] p-4 justify-start">
             {example[selectedButton] && (
               <div className="grid items-center justify-center">

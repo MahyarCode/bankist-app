@@ -6,7 +6,7 @@ const Section: React.FC<{
   children: React.ReactNode;
 }> = ({ title, text, children }) => {
   return (
-    <section>
+    <section className="relative">
       <div className="grid grid-cols-4 w-full mb-10">
         <div className="grid justify-start col-start-2 col-span-2 font-averia">
           <h1 className="text-green-600 text-xl ">{title}</h1>
