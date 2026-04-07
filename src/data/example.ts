@@ -1,4 +1,6 @@
-export const example: object[] = [
+import type { data } from "../types/dataType";
+
+export const example: data[] = [
   {
     title: "Tranfser money to anyone, instantly! No fees, no BS.",
     text: `laboriosam sunt, praesentium suscipit blanditiis. Necessitatibus Lorem ipsum dolor sit, amet consectetur adipisicing elit
