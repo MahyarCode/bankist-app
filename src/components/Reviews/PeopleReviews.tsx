@@ -55,12 +55,15 @@ const PeopleReviews: React.FC = () => {
             <div className="grid justify-center items-center h-40">
               <button
                 onClick={() => handleReviewNavigation("previous")}
-                className="text-2xl"
+                className="text-2xl size-10 hover:cursor-pointer"
               >
                 ⬅️
               </button>
             </div>
             <div className="grid justify-self-center">
+              <h1 className="text-2xl font-bold">
+                {reviewsData[reviewIndex].title}
+              </h1>
               <p className="text-2xl text-justify">
                 {reviewsData[reviewIndex].text}
               </p>
@@ -68,7 +71,7 @@ const PeopleReviews: React.FC = () => {
             <div className="grid justify-center items-center h-40">
               <button
                 onClick={() => handleReviewNavigation("next")}
-                className="text-2xl"
+                className="text-2xl size-10 hover:cursor-pointer"
               >
                 ➡️
               </button>
@@ -76,7 +79,7 @@ const PeopleReviews: React.FC = () => {
           </div>
           <div className="flex justify-center pb-4">
             <div className="flex gap-3">
-              {reviewsData.map((btn, index) => {
+              {reviewsData.map((_, index) => {
                 return (
                   <button
                     key={index}
