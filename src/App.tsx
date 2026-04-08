@@ -4,7 +4,7 @@ import Hero from "./components/Hero";
 import Features from "./components/Features";
 import Operation from "./components/Operation";
 import Reviews from "./components/Reviews";
-// import EndingPage from "./components/EndingPage";
+import EndingPage from "./components/Footer";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         <Features />
         <Operation />
         <Reviews />
-        {/* <EndingPage /> */}
+        <EndingPage />
       </div>
     </>
   );
