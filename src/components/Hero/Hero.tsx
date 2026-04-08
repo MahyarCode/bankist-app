@@ -3,7 +3,7 @@ import React from "react";
 const Hero: React.FC = () => {
   return (
     <>
-      <div className="grid grid-cols-[55%_45%] h-screen w-full snap-start items-center border-b border-gray-300 px-30 bg-gray-200 ">
+      <div className="grid grid-cols-[55%_45%] h-screen w-full snap-start items-center border-b border-gray-400 px-30 bg-gray-200 ">
         <div className="grid grid-rows-3 justify-center font-averia">
           <div className="grid row-start-2 ">
             <p className="text-5xl relative font-bold">

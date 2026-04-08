@@ -10,7 +10,7 @@ const NavBar: React.FC = () => {
         <div className="flex gap-4 font-averia text-xl **:hover:cursor-pointer *:hover:text-red-500">
           <button>Feature</button>
           <button>Operations</button>
-          <button>Testimonials</button>
+          <button>Reviews</button>
           <div className="flex items-center hover:text-blue-500!">
             <button className="border-transparent bg-green-400 rounded-4xl p-3 ">
               Open Account

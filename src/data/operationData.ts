@@ -1,6 +1,6 @@
-import type { data } from "../types/dataType";
+import type { operationDataType } from "../types/dataType";
 
-export const example: data[] = [
+export const example: operationDataType[] = [
   {
     title: "Tranfser money to anyone, instantly! No fees, no BS.",
     text: `laboriosam sunt, praesentium suscipit blanditiis. Necessitatibus Lorem ipsum dolor sit, amet consectetur adipisicing elit

@@ -5,9 +5,9 @@ const Tabs: React.FC<{
 }> = ({ children, buttons }) => {
   return (
     <>
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center ">
         <menu>
-          <div className="flex gap-20 *:border *:rounded-full *:p-3 **:cursor-pointer">
+          <div className="flex gap-20 *:border *:rounded-full *:p-3 **:cursor-pointer mt-20">
             {buttons}
           </div>
         </menu>

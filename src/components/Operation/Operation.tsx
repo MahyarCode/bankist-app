@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Section from "./Section";
 import Tabs from "./Tabs";
 import TabButtons from "./TabButtons";
-import { example } from "../../data/example";
+import { example } from "../../data/operationData";
 
 const Operation: React.FC = () => {
   const [selectedButton, setSelectedButton] = useState<number>(0);
@@ -55,7 +55,7 @@ const Operation: React.FC = () => {
 
   return (
     <>
-      <div className="py-30 px-10 border-b-gray-100 bg-gray-200 ">
+      <div className="py-30 px-10 border-b border-gray-400 bg-gray-200 ">
         <Section
           title="OPERATION"
           text="Everything as simple as possible, but no simpler."
